@@ -32,8 +32,8 @@ int main(int argc, char *argv[])
     // Ověření, že byly argumenty zadány správně.
     if (outputFilename == NULL || width <= 0 || height <= 0)
     {
-        fprintf(stderr, "Error: Invalid arguments\n");
-        return EXIT_FAILURE;
+        printf("Chyba: Špatné argumenty příkazové řádky\n");
+        return 1;
     }
 
     // Inicializace obrázku s danou šířkou a výškou.
@@ -59,9 +59,9 @@ int main(int argc, char *argv[])
                 }
                 else
                 {
-                    fprintf(stderr, "Error: Invalid command for line\n");
+                    printf("Chyba: Špatný příkaz pro definici čáry\n");
                     freeImage(&image);
-                    return EXIT_FAILURE;
+                    return 1;
                 }
             }
             else if (strcmp(command, "rectangle") == 0)
@@ -75,9 +75,9 @@ int main(int argc, char *argv[])
                 }
                 else
                 {
-                    fprintf(stderr, "Error: Invalid command for rectangle\n");
+                    printf("Chyba: Špatný příkaz pro definici obdélníku\n");
                     freeImage(&image);
-                    return EXIT_FAILURE;
+                    return 1;
                 }
             }
             else if (strcmp(command, "circle") == 0)
@@ -91,9 +91,9 @@ int main(int argc, char *argv[])
                 }
                 else
                 {
-                    fprintf(stderr, "Error: Invalid command for circle\n");
+                    printf("Chyba: Špatný příkaz pro definici kruhu\n");
                     freeImage(&image);
-                    return EXIT_FAILURE;
+                    return 1;
                 }
             }
             else if (strcmp(command, "triangle") == 0)
@@ -107,9 +107,9 @@ int main(int argc, char *argv[])
                 }
                 else
                 {
-                    fprintf(stderr, "Error: Invalid command for triangle\n");
+                    printf("Chyba: Špatný příkaz pro definici trojůhelníku\n");
                     freeImage(&image);
-                    return EXIT_FAILURE;
+                    return 1;
                 }
             }
             else if (strcmp(command, "rotated-rectangle") == 0)
@@ -123,9 +123,9 @@ int main(int argc, char *argv[])
                 }
                 else
                 {
-                    fprintf(stderr, "Chyba: špatné parametry pro otočený obdélník\n");
+                    printf("Chyba: špatné parametry pro otočený obdélník\n");
                     freeImage(&image);
-                    return EXIT_FAILURE;
+                    return 1;
                 }
             }
             else if (strcmp(command, "save") == 0)
@@ -136,18 +136,18 @@ int main(int argc, char *argv[])
             {
                 saveImage(&image, outputFilename);
                 freeImage(&image);
-                return EXIT_SUCCESS;
+                return 0;
             }
         }
         else
         {
             printf("Chyba: špatný příkaz\n");
             freeImage(&image);
-            return EXIT_FAILURE;
+            return 0;
         }
     }
 
     // Po dokončení všech operací uvolníme paměť a ukončíme program.
     freeImage(&image);
-    return EXIT_SUCCESS;
+    return 0;
 }

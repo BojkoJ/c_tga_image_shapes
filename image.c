@@ -52,7 +52,7 @@ void initializeImage(Image *image, int width, int height)
     // Kontrola, jestli se paměť podařilo alokovat. Když ne, vypíše chybu a ukončí program.
     if (image->pixels == NULL)
     {
-        fprintf(stderr, "Alokace selhala :(\n");
+        printf("Alokace selhala :(\n");
         exit(1);
     }
 
