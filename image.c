@@ -80,6 +80,13 @@ void saveImage(Image *image, const char *filename)
         .color_map_type = 0, // Bez mapy barev.
         .image_type = 2,     // Typ obrázku: nekomprimovaný true-color.
 
+        // Zaručíme, že bin. data budou vždy v little-endian formátu:
+        // Viz. skripta:
+
+        /*Při načítání binárních dat ze souborů musíme dávat pozor na to,
+        jestli jsou hodnoty uloženy v little-endian nebo big-endian formátu.
+        U TGA je určeno, že musí být v little-endian,*/
+
         // Šířka obrázku rozdělená na dva 8bitové části (little-endian format):
         .width = {
             (byte)(image->width & 0xFF),       // Nižší bajt (LSB - Least Significant Byte) šířky

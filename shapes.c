@@ -205,7 +205,7 @@ void drawRotatedRectangle(Image *image, double angle, int cx, int cy, int width,
     // Projdeme všechny čtyři rohy a aplikujeme na ně rotační transformaci.
     for (int i = 0; i < 4; i++)
     {
-        // Aplikujeme 2D rotační transformaci na každý roh (ze zadání).
+        // Aplikujeme 2D rotační transformaci na každý roh (vzorec ze zadání).
         // Otáčíme kolem středu (cx, cy).
         rotatedX[i] = (int)((cornersX[i] - cx) * cos(radians) - (cornersY[i] - cy) * sin(radians) + cx);
         rotatedY[i] = (int)((cornersX[i] - cx) * sin(radians) + (cornersY[i] - cy) * cos(radians) + cy);

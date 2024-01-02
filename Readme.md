@@ -37,7 +37,7 @@ make
 
 Tímto příkazem se sestaví výsledný spustitelný soubor, který je poté možné spustit z příkazové řádky.
 
-## Jak spustit?
+## Jak spustit
 
 Po úspěšném přeložení můžete program spustit pomocí následujícího příkazu:
 
@@ -46,3 +46,16 @@ Po úspěšném přeložení můžete program spustit pomocí následujícího p
 ```
 
 Nahraďte <cesta_k_souboru>, <šířka> a <výška> skutečnými hodnotami podle vašich potřeb. Poté můžete zadávat příkazy pro kreslení tvarů, jak je popsáno výše.
+
+## Zdroje:
+
+Z čeho jsem čerpal?
+
+- **Wikipedie**:
+  [Endianita](https://en.wikipedia.org/wiki/Endianness)
+  [Bresenhamuv_Algoritmus_Kruhu](https://en.wikipedia.org/wiki/Midpoint_circle_algorithm)
+  [Bresenhamuv*Algoritmus*Čáry](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm)
+- **Další zdroje**:
+  [Skripta](https://mrlvsb.github.io/upr-skripta/c/aplikovane_ulohy/tga.html)
+  [Konstanta_Pí](https://www.piday.org/million/)
+  [Dokumentace_Jazyka_C](https://devdocs.io/c/)
