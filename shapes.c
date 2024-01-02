@@ -129,7 +129,7 @@ void drawCircle(Image *image, int cx, int cy, int radius, Color color)
     {
         // Kreslí osm segmentů kruhu najednou (pro využití symetrie)
         // Viz. animace algoritmu na wiki stránce:
-        // Zdroj: https://en.wikipedia.org/wiki/Midpoint_circle_algorithm
+        // Zdroj: https://en.wikipedia.org/wiki/Midpoint_circle_algorithm#/media/File:Midpoint_circle_algorithm_animation_(radius_23).gif
         // Vykreslování probíhá 8 směry - na každé ze 4 stran kruhu do dvou stran.
 
         putPixel(image, cx + x, cy + y, color);
