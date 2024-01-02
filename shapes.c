@@ -127,7 +127,11 @@ void drawCircle(Image *image, int cx, int cy, int radius, Color color)
 
     while (x >= y)
     {
-        // Kreslí osm segmentů kruhu najednou (pro využití symetrie).
+        // Kreslí osm segmentů kruhu najednou (pro využití symetrie)
+        // Viz. animace algoritmu na wiki stránce:
+        // Zdroj: https://en.wikipedia.org/wiki/Midpoint_circle_algorithm
+        // Vykreslování probíhá 8 směry - na každé ze 4 stran kruhu do dvou stran.
+
         putPixel(image, cx + x, cy + y, color);
         putPixel(image, cx + y, cy + x, color);
         putPixel(image, cx - y, cy + x, color);
@@ -180,7 +184,7 @@ void drawTriangle(Image *image, int x, int y, int side, Color color)
     drawLine(image, x3, y3, x1, y1, color);
 }
 
-// Funkce pro kreslení otočeného obdélníku na obrázek.
+// Funkce pro kreslení otočeného obdélníku.
 void drawRotatedRectangle(Image *image, double angle, int cx, int cy, int width, int height, Color color)
 {
     // Nejprve převedeme úhel z stupňů na radiány pro funkce sin a cos.

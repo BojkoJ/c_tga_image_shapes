@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Definice typu byte jako neznaménkový 8-bitový char (používá se pro data pixelů)
+// Definice typu byte jako neznaménkový char (používá se pro data pixelů)
 typedef unsigned char byte;
 
 // Struktura reprezentující barvu pixelu
