@@ -52,10 +52,10 @@ Nahraďte <cesta_k_souboru>, <šířka> a <výška> skutečnými hodnotami podle
 Z čeho jsem čerpal?
 
 - **Wikipedie**:
-  [Endianita](https://en.wikipedia.org/wiki/Endianness)
-  [Bresenhamuv_Algoritmus_Kruhu](https://en.wikipedia.org/wiki/Midpoint_circle_algorithm)
-  [Bresenhamuv*Algoritmus*Čáry](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm)
+  [Endianita](https://en.wikipedia.org/wiki/Endianness) |
+  [Bresenhamuv_Algoritmus_Kruhu](https://en.wikipedia.org/wiki/Midpoint_circle_algorithm) |
+  [Bresenhamuv_Algoritmus_Cary](https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm)
 - **Další zdroje**:
-  [Skripta](https://mrlvsb.github.io/upr-skripta/c/aplikovane_ulohy/tga.html)
-  [Konstanta_Pí](https://www.piday.org/million/)
+  [Skripta](https://mrlvsb.github.io/upr-skripta/c/aplikovane_ulohy/tga.html) |
+  [Konstanta_Pí](https://www.piday.org/million/) |
   [Dokumentace_Jazyka_C](https://devdocs.io/c/)
