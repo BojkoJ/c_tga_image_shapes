@@ -26,7 +26,7 @@ Program se ovládá zadáváním příkazů. Zde jsou příklady některých zá
 
 ## Jak přeložit
 
-Program využívá `Makefile` pro jednoduché přeložení. Ujistěte se, že máte nainstalovaný kompilátor GCC a následně použijte následující příkazy:
+Program využívá `Makefile` pro jednoduché přeložení. Pro kompilaci použijte následující příkazy:
 
 1. Otevřete terminál ve složce, kde se nachází zdrojové soubory programu.
 2. Spusťte příkaz `make` pro sestavení programu:
